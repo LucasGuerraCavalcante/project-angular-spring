@@ -1,5 +1,9 @@
 package com.projmoney.api.repository;
 
-public class PersonRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.projmoney.api.model.Person;
+
+public interface PersonRepository extends JpaRepository<Person, Long> {
 
 }
